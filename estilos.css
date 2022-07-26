@@ -10,7 +10,6 @@ body {
     font-weight: 400;
     font-size: 1rem;
     color: black;
-    
 }
 
 .grid-layout {
@@ -130,30 +129,25 @@ header ul li a:hover {
 
 .c3 > div {
     background-color: white;
-    padding: 8em;
+    padding: 1em;
     margin-left: 10%;
-    width: 30%;
-    margin-top: 17vh;
+    width: 60%;
     box-shadow: 1px 2px 15px -1px rgba(66,66,66,0.56);
 } 
 
-.c3 > div h2 {
-    margin-bottom: 2em;
-}
-
-.c3 ul li {
-    border-top:solid 1px black;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.c3 ul li:last-child {
-    border-bottom:solid 1px black;
-}
-
 .c3 img {
     width: 5%;
+}
+
+.c3 h2 {
+    font-size: 1.5rem;
+    padding: 2% 0;
+}
+
+.boton1 {
+    background-color: black;
+    padding: 10px;
+    color: white;
 }
 
 /*----------------SECCION 3 / ----------------*/
