@@ -8,7 +8,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
     color: black;
 }
 
@@ -46,6 +45,11 @@ section p {
 a {
     text-decoration: none;
     color:black
+}
+
+.carousel-control {
+    width: 0;
+    opacity: 0;
 }
 
 /*----------------TEXTO Y COLOR----------------*/
@@ -145,14 +149,21 @@ header ul li a:hover {
 }
 
 .c3 h2 {
-    font-size: 1.5rem;
     padding: 2% 0;
+}
+
+.c3 p {
+    margin-bottom: 3em;
 }
 
 .boton1 {
     background-color: black;
     padding: 10px;
     color: white;
+}
+
+.accordion-button {
+    font-size: 2rem;
 }
 
 /*----------------SECCION 3 / ----------------*/
@@ -163,8 +174,8 @@ header ul li a:hover {
 }
 
 .c4 article {
-    margin: 3em;
     text-align: center;
+    margin-top: 6em;
 }
 
 /*----------------SECCION 4 / ----------------*/
@@ -178,13 +189,22 @@ header ul li a:hover {
 }
 
 .c5 a {
-    color: tomato;
+    color: #071821;
     font-weight: 600;
-    font-size: larger;
+    font-size: 22px;
+}
+
+.c5 a:hover {
+    color: tomato;
 }
 
 .c5 img {
     width: 100%;
+}
+
+.c5 h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 /*----------------FOOTER----------------*/
