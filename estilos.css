@@ -6,7 +6,7 @@
 /*----------------AUXILIARES----------------*/
 
 body {
-    font-family: Cerebri,Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color: black;
@@ -54,10 +54,21 @@ a {
 /*----------------HEADER----------------*/
 .c1 {
     grid-area: header;
+    background-color: #071821;
 }
 
-header a img {
-    width: 15%;
+.c1 a {
+    color: white;
+}
+
+.c1 a img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: all 1.5s ease-in-out;
+}
+
+.c1 a img:hover {
+    transform: rotate(360deg);
 }
 
 /*----------------MENU----------------*/
@@ -69,15 +80,8 @@ header > div {
 header ul {
     list-style-type: none;
     display: flex;
+    margin-bottom: 0;
  }
-
- header ul li {
-    border-right:solid 1px black;
-}
-
-header ul li:last-child {
-    border-right: none;
-}
 
 header ul li a {
     text-decoration: none;
@@ -125,6 +129,7 @@ header ul li a:hover {
     background-image: url(img/Trabajo.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    background-color: #071821;
 }
 
 .c3 > div {
@@ -169,6 +174,7 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: .5em;
+    flex-wrap: wrap;
 }
 
 .c5 a {
@@ -177,12 +183,17 @@ header ul li a:hover {
     font-size: larger;
 }
 
+.c5 img {
+    width: 100%;
+}
+
 /*----------------FOOTER----------------*/
 .c6 {
     grid-area: footer;
-    width: 90%;
     margin: 0 auto;
     border-top: 1px solid black;
+    background-color: #071821;
+
 }
 
 .c6 div {
@@ -190,8 +201,18 @@ header ul li a:hover {
     flex-direction: row;
     justify-content: end;
     gap: 3%;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.c6 div a{
+    color: white;
+    padding-right: .5em;
+    font-size: small;
+}
+
+.c6 div a:last-child {
+    padding-right: 10em;
 }
 
 .c6 div a:hover {
