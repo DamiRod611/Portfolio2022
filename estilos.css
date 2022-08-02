@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor:url(img/Cursor.png), auto;
 }
 
 /*----------------AUXILIARES----------------*/
@@ -8,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: black;
+    color: #071821
 }
 
 .grid-layout {
@@ -19,12 +20,13 @@ body {
                          'trabajos trabajos'
                          'motivacion motivacion'
                          'footer footer';
-    grid-template-rows: auto 92vh 92vh auto 5% auto;
+    grid-template-rows: auto 92vh 80vh auto 5% auto;
 }
 
 .grid-layout2 {
     display: grid;
     grid-template-areas: 'header header'
+                         'form form'
                          'footer footer';
 }
 
@@ -91,12 +93,14 @@ header ul li a {
     text-decoration: none;
     display: block;
     padding: 15px 20px;
-    color:black
+    color: #071821;
+    text-transform: uppercase;
+    letter-spacing: .20rem;
 }
 
 header ul li a:hover {
     text-decoration:line-through;
-    text-decoration-color: tomato;
+    text-decoration-color: #ff6347;
 }
 
 /*----------------SECCION 1 / ----------------*/
@@ -130,19 +134,24 @@ header ul li a:hover {
 /*----------------SECCION 2 / ----------------*/
 .c3 {
     grid-area: contenido;
+    background-color: #071821;
     background-image: url(img/Trabajo.jpg);
     background-repeat: no-repeat;
-    background-position: right;
-    background-color: #071821;
+    background-position: right
+    ;
 }
 
 .c3 > div {
     background-color: white;
     padding: 2em;
-    margin-left: 10%;
-    width: 70%;
+    margin-left: 8em;
+    width: 35%;
     box-shadow: 1px 2px 15px -1px rgba(66,66,66,0.56);
 } 
+
+.c3>div>h2 {
+    font-size: 25px;
+}
 
 .c3 img {
     width: 5%;
@@ -156,14 +165,30 @@ header ul li a:hover {
     margin-bottom: 3em;
 }
 
+.c3 button {
+    padding-left: 2em;
+}
+
 .boton1 {
-    background-color: black;
+    background-color: #071821;
     padding: 10px;
     color: white;
 }
 
+.boton1:hover {
+    background-color: tomato;
+    color: #071821;
+    text-decoration: none;
+}
+
 .accordion-button {
     font-size: 2rem;
+}
+
+.accordion-header {
+    border-bottom: 0.5px solid lightgray;
+    border-top: 0.5px solid lightgray;
+    padding-left: 1em;
 }
 
 /*----------------SECCION 3 / ----------------*/
@@ -207,13 +232,42 @@ header ul li a:hover {
     margin-bottom: 2em;
 }
 
+/*----------------FORMULARIO----------------*/
+
+form {
+    margin: 10em;
+}
+
+form label {
+    font-size: medium;
+}
+
+
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    color: #071821;
+}
+
+.btn-success, .btn-info {
+    background-color: #071821;
+}
+
+.btn-success:hover, .btn-info:hover {
+    color: #ff6347;
+    background-color: #071821;
+}
+
+.btn-default:hover {
+    background-color: tomato;
+}
+
+
 /*----------------FOOTER----------------*/
 .c6 {
     grid-area: footer;
-    margin: 0 auto;
-    border-top: 1px solid black;
     background-color: #071821;
-
 }
 
 .c6 div {
