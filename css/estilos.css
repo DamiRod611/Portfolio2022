@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: url(img/Cursor.png), auto; }
+
+/*----------------AUXILIARES----------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #071821; }
+
+.grid-layout {
+  display: grid;
+  grid-template-areas: 'header header' 'info info' 'contenido contenido' 'trabajos trabajos' 'motivacion motivacion' 'footer footer';
+  grid-template-rows: auto 92vh 80vh auto 5% auto; }
+
+.grid-layout2 {
+  display: grid;
+  grid-template-areas: 'header header' 'form form' 'footer footer'; }
+
+.centrar {
+  width: 85%;
+  margin: 0 auto; }
+
+.columnas {
+  display: flex;
+  justify-content: space-between; }
+
+section p {
+  margin: 1em 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.carousel-control {
+  width: 0;
+  opacity: 0; }
+
+/*----------------TEXTO Y COLOR----------------*/
+/*----------------BOTONES GENERALES----------------*/
+/*----------------HEADER----------------*/
+.c1 {
+  grid-area: header;
+  background-color: #071821; }
+  .c1 a {
+    color: white; }
+    .c1 a img {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      transition: all 1.5s ease-in-out; }
+      .c1 a img:hover {
+        transform: rotate(360deg); }
+
+/*----------------MENU----------------*/
+header > div {
+  align-items: center; }
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0; }
+
+header ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+  color: #071821;
+  text-transform: uppercase;
+  letter-spacing: .20rem; }
+  header ul li a:hover {
+    text-decoration: line-through;
+    text-decoration-color: #ff6347; }
+
+/*----------------SECCION 1 / ----------------*/
+.c2 {
+  grid-area: info;
+  align-self: center; }
+
+#section1 {
+  width: 40%; }
+  #section1 img {
+    margin-right: 1em; }
+
+#section1:last-child {
+  align-self: center; }
+
+#redes {
+  align-items: flex-end; }
+  #redes img {
+    width: 3%;
+    display: inline;
+    margin: 1em; }
+
+/*----------------SECCION 2 / ----------------*/
+.c3 {
+  grid-area: contenido;
+  background-color: #071821;
+  background-image: url(../img/Trabajo.jpg);
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.c3 > div {
+  background-color: white;
+  padding: 2em;
+  margin-left: 8em;
+  width: 35%;
+  box-shadow: 1px 2px 15px -1px rgba(66, 66, 66, 0.56); }
+
+.c3 > div > h2 {
+  font-size: 25px; }
+
+.c3 img {
+  width: 5%; }
+
+.c3 h2 {
+  padding: 2% 0; }
+
+.c3 p {
+  margin-bottom: 3em; }
+
+.c3 button {
+  padding-left: 2em; }
+
+.boton1 {
+  background-color: #071821;
+  padding: 10px;
+  color: white; }
+  .boton1:hover {
+    background-color: tomato;
+    color: #071821;
+    text-decoration: none; }
+
+.accordion-button {
+  font-size: 2rem; }
+
+.accordion-header {
+  border-bottom: 0.5px solid lightgray;
+  border-top: 0.5px solid lightgray;
+  padding-left: 1em; }
+
+/*----------------SECCION 3 / ----------------*/
+.c4 {
+  grid-area: trabajos;
+  display: flex;
+  justify-content: center; }
+  .c4 article {
+    text-align: center;
+    margin-top: 6em; }
+
+/*----------------SECCION 4 / ----------------*/
+.c5 {
+  grid-area: motivacion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  flex-wrap: wrap; }
+  .c5 a {
+    color: #071821;
+    font-weight: 600;
+    font-size: 22px; }
+    .c5 a:hover {
+      color: tomato; }
+
+.c5 img {
+  width: 100%; }
+
+.c5 h2 {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+/*----------------FORMULARIO----------------*/
+form {
+  margin: 10em; }
+  form label {
+    font-size: medium; }
+
+.form-control {
+  border: none;
+  border-radius: 0;
+  color: #071821; }
+
+.btn-success, .btn-info {
+  background-color: #071821; }
+
+.btn-success:hover, .btn-info:hover {
+  color: #ff6347;
+  background-color: #071821; }
+
+.btn-default:hover {
+  background-color: tomato; }
+
+/*----------------FOOTER----------------*/
+.c6 {
+  grid-area: footer;
+  background-color: #071821; }
+  .c6 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 3%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+    .c6 div a {
+      color: white;
+      padding-right: .5em;
+      font-size: small; }
+      .c6 div a:hover {
+        text-decoration: line-through;
+        text-decoration-color: tomato; }
+
+.c6 div a:last-child {
+  padding-right: 10em; }
+
+/*----------------FIN :)----------------*/

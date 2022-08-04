@@ -61,20 +61,17 @@ a {
 .c1 {
     grid-area: header;
     background-color: #071821;
-}
-
-.c1 a {
-    color: white;
-}
-
-.c1 a img {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    transition: all 1.5s ease-in-out;
-}
-
-.c1 a img:hover {
-    transform: rotate(360deg);
+    a {
+        color: white;
+        img {
+            margin-top: 1em;
+             margin-bottom: 1em;
+            transition: all 1.5s ease-in-out;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
 }
 
 /*----------------MENU----------------*/
@@ -96,11 +93,10 @@ header ul li a {
     color: #071821;
     text-transform: uppercase;
     letter-spacing: .20rem;
-}
-
-header ul li a:hover {
-    text-decoration:line-through;
-    text-decoration-color: #ff6347;
+    &:hover {
+        text-decoration:line-through;
+        text-decoration-color: #ff6347;
+    }
 }
 
 /*----------------SECCION 1 / ----------------*/
@@ -111,10 +107,9 @@ header ul li a:hover {
 
 #section1 {
     width: 40%;
-}
-
-#section1 img {
-    margin-right: 1em;
+    img {
+        margin-right: 1em;
+    }
 }
 
 #section1:last-child {
@@ -123,19 +118,18 @@ header ul li a:hover {
 
 #redes {
     align-items: flex-end;
-}
-
-#redes img {
-    width: 3%;
-    display: inline;
-    margin: 1em;
+    img {
+        width: 3%;
+        display: inline;
+        margin: 1em;
+    }
 }
 
 /*----------------SECCION 2 / ----------------*/
 .c3 {
     grid-area: contenido;
     background-color: #071821;
-    background-image: url(img/Trabajo.jpg);
+    background-image: url(../img/Trabajo.jpg);
     background-repeat: no-repeat;
     background-position: right
     ;
@@ -173,12 +167,11 @@ header ul li a:hover {
     background-color: #071821;
     padding: 10px;
     color: white;
-}
-
-.boton1:hover {
-    background-color: tomato;
-    color: #071821;
-    text-decoration: none;
+    &:hover {
+        background-color: tomato;
+        color: #071821;
+        text-decoration: none;
+    }
 }
 
 .accordion-button {
@@ -196,11 +189,10 @@ header ul li a:hover {
     grid-area: trabajos;
     display: flex;
     justify-content: center;
-}
-
-.c4 article {
-    text-align: center;
-    margin-top: 6em;
+    article {
+        text-align: center;
+        margin-top: 6em;
+    }
 }
 
 /*----------------SECCION 4 / ----------------*/
@@ -211,16 +203,14 @@ header ul li a:hover {
     align-items: center;
     gap: .5em;
     flex-wrap: wrap;
-}
-
-.c5 a {
-    color: #071821;
-    font-weight: 600;
-    font-size: 22px;
-}
-
-.c5 a:hover {
-    color: tomato;
+    a {
+        color: #071821;
+        font-weight: 600;
+        font-size: 22px;
+        &:hover {
+            color: tomato;
+        }
+    }
 }
 
 .c5 img {
@@ -236,13 +226,10 @@ header ul li a:hover {
 
 form {
     margin: 10em;
+    label {
+        font-size: medium;
+    }
 }
-
-form label {
-    font-size: medium;
-}
-
-
 
 .form-control {
     border: none;
@@ -268,30 +255,27 @@ form label {
 .c6 {
     grid-area: footer;
     background-color: #071821;
-}
-
-.c6 div {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 3%;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-}
-
-.c6 div a{
-    color: white;
-    padding-right: .5em;
-    font-size: small;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 3%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        a {
+            color: white;
+            padding-right: .5em;
+            font-size: small;
+            &:hover {
+                text-decoration:line-through;
+                text-decoration-color: tomato;
+            }
+        }
+    }
 }
 
 .c6 div a:last-child {
     padding-right: 10em;
-}
-
-.c6 div a:hover {
-    text-decoration:line-through;
-    text-decoration-color: tomato;
 }
 
 /*----------------FIN :)----------------*/
