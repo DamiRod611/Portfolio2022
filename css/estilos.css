@@ -16,7 +16,17 @@ body {
 
 .grid-layout2 {
   display: grid;
-  grid-template-areas: 'header header' 'form form' 'footer footer'; }
+  grid-template-areas: 'header header'  'form form' 'footer footer'; }
+
+.grid-layout3 {
+  display: grid;
+  grid-template-areas: 'header header' 'contenido2 contenido2'  'footer footer';
+  grid-template-rows: auto auto auto; }
+
+.grid-layout4 {
+  display: grid;
+  grid-template-areas: 'header header' 'contenido3 contenido3'  'footer footer';
+  grid-template-rows: auto auto auto; }
 
 .centrar {
   width: 85%;
@@ -24,14 +34,16 @@ body {
 
 .columnas {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 section p {
-  margin: 1em 0; }
+  margin: 1em 0;
+  font-size: 1.2em; }
 
 a {
   text-decoration: none;
-  color: black; }
+  color: #071821; }
 
 .carousel-control {
   width: 0;
@@ -128,9 +140,9 @@ header ul li a {
 .boton1 {
   background-color: #071821;
   padding: 10px;
-  color: white; }
+  color: #fff; }
   .boton1:hover {
-    background-color: tomato;
+    background-color: #ff6347;
     color: #071821;
     text-decoration: none; }
 
@@ -146,7 +158,8 @@ header ul li a {
 .c4 {
   grid-area: trabajos;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .c4 article {
     text-align: center;
     margin-top: 6em; }
@@ -156,6 +169,7 @@ header ul li a {
   grid-area: motivacion;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: .5em;
   flex-wrap: wrap; }
@@ -164,7 +178,7 @@ header ul li a {
     font-weight: 600;
     font-size: 22px; }
     .c5 a:hover {
-      color: tomato; }
+      color: #ff6347; }
 
 .c5 img {
   width: 100%; }
@@ -192,7 +206,7 @@ form {
   background-color: #071821; }
 
 .btn-default:hover {
-  background-color: tomato; }
+  background-color: #ff6347; }
 
 /*----------------FOOTER----------------*/
 .c6 {
@@ -206,14 +220,69 @@ form {
     padding-top: 1.5em;
     padding-bottom: 1.5em; }
     .c6 div a {
-      color: white;
+      color: #fff;
       padding-right: .5em;
       font-size: small; }
       .c6 div a:hover {
         text-decoration: line-through;
-        text-decoration-color: tomato; }
+        text-decoration-color: #ff6347; }
 
 .c6 div a:last-child {
   padding-right: 10em; }
+
+/*----------------SECCION Logofolio / ----------------*/
+.c8 {
+  grid-area: contenido2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 2em; }
+
+.c8 article div {
+  width: 260px; }
+
+.c8 article div h3 {
+  font-weight: 500; }
+
+.c8 article div p {
+  margin: 0 auto;
+  font-size: small; }
+
+.card_imagen {
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+  width: 100%;
+  transform: scale(0.9);
+  transition: .3s ease-in-out; }
+
+.card_imagen:hover {
+  transform: scale(1); }
+
+.c9 {
+  grid-area: contenido3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.c9 article {
+  width: 500px;
+  padding: 2em;
+  margin: 2em;
+  -webkit-box-shadow: 0px 0px 10px 0px #949494;
+  -moz-box-shadow: 0px 0px 10px 0px #949494;
+  box-shadow: 0px 0px 10px 0px #949494; }
+
+.c9 article img {
+  margin-top: 2em;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.c9 article img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
 
 /*----------------FIN :)----------------*/

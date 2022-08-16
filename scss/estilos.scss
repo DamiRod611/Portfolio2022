@@ -6,6 +6,12 @@
 
 /*----------------AUXILIARES----------------*/
 
+$colores: (
+    color1: #071821,
+    color2: #ff6347,
+    color3: #fff,
+);
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -25,12 +31,28 @@ body {
 
 .grid-layout2 {
     display: grid;
-    grid-template-areas: 'header header'
+    grid-template-areas: 'header header' 
                          'form form'
                          'footer footer';
 }
 
-.centrar{
+.grid-layout3 {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'contenido2 contenido2' 
+                         'footer footer';
+    grid-template-rows: auto auto auto;
+}
+
+.grid-layout4 {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'contenido3 contenido3' 
+                         'footer footer';
+    grid-template-rows: auto auto auto;
+}
+
+.centrar {
     width: 85%;
     margin: 0 auto;
 }
@@ -38,10 +60,12 @@ body {
 .columnas {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 section p {
     margin: 1em 0;
+    font-size: 1.2em;
 }
 
 a {
@@ -57,13 +81,10 @@ a {
 @mixin flex-row-center {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-$colores: (
-    color1: #071821,
-    color2: #ff6347,
-    color3: #fff,
-);
+
 
 /*----------------TEXTO Y COLOR----------------*/
 
@@ -294,6 +315,73 @@ form {
 
 .c6 div a:last-child {
     padding-right: 10em;
+}
+
+/*----------------SECCION Logofolio / ----------------*/
+
+.c8 {
+    grid-area: contenido2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-top: 2em;
+}
+
+.c8 article div {
+    width: 260px;
+}
+
+.c8 article div h3 {
+    font-weight: 500;
+}
+
+.c8 article div p {
+    margin: 0 auto;
+    font-size: small;
+}
+
+.card_imagen {
+        display: block;
+        height: 200px;
+        margin: 0 auto;
+        width: 100%;
+        transform: scale(.9);
+	    transition: .3s ease-in-out;
+}
+
+.card_imagen:hover {
+    transform: scale(1);
+}
+
+
+.c9 {
+    grid-area: contenido3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.c9 article {
+    width: 500px;
+    padding: 2em;
+    margin: 2em;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(148,148,148,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(148,148,148,1);
+    box-shadow: 0px 0px 10px 0px rgba(148,148,148,1);
+}
+
+.c9 article img {
+    margin-top: 2em;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.c9 article img:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 /*----------------FIN :)----------------*/
