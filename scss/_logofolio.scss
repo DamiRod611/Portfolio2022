@@ -1,0 +1,135 @@
+@import "variables";
+
+.grid-layout3 {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'contenido2 contenido2' 
+                         'footer footer';
+    grid-template-rows: auto auto auto;
+}
+
+/*----------------HEADER----------------*/
+.c1 {
+    grid-area: header;
+    background-color: map-get($colores, color1);
+    a {
+        color: map-get($colores, color3);
+        img {
+            margin-top: 1em;
+             margin-bottom: 1em;
+            transition: all 1.5s ease-in-out;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+/*----------------MENU----------------*/
+
+header {
+    margin-bottom: 2em;
+}
+
+header > div {
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+ }
+
+header ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    color: map-get($colores, color1);
+    text-transform: uppercase;
+    letter-spacing: .20rem;
+    &:hover {
+        text-decoration:line-through;
+        text-decoration-color: map-get($colores, color2);
+    }
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-collapse {
+    box-shadow: none;
+}
+
+/*----------------INFO----------------*/
+
+.c8 {
+    grid-area: contenido2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 10px;
+}
+
+.c8 figure{
+    position:relative;
+    overflow: hidden;
+}
+.c8 figure img{
+    width: 100%;
+    height: 100%;
+}
+.c8 figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7,24,33,0.9);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.c8 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.c8 figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.c8 figure .capa h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+
+/*----------------FOOTER----------------*/
+.c6 {
+    grid-area: footer;
+    background-color: map-get($colores, color1);
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 3%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        a {
+            color: map-get($colores, color3);
+            padding-right: .5em;
+            font-size: small;
+            &:hover {
+                text-decoration:line-through;
+                text-decoration-color: map-get($colores, color2);
+            }
+        }
+    }
+}
+
+.c6 div a:last-child {
+    padding-right: 10em;
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor:url(../img/Cursor.png), auto;
+}
+
+/*----------------AUXILIARES----------------*/
+
+$colores: (
+    color1: #071821,
+    color2: #ff6347,
+    color3: #fff,
+);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: map-get($colores, color1);
+}
+
+.centrar {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section p {
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($colores, color1);
+}
+
+.carousel-control {
+    width: 0;
+    opacity: 0;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/*----------------TEXTO Y COLOR----------------*/
+
+.titulos {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: map-get($colores, color1);
+}

@@ -1,0 +1,91 @@
+@import "variables";
+
+.grid-layout2 {
+    display: grid;
+    grid-template-areas: 'header header' 
+                         'contenido5 contenido5'
+                         'footer footer';
+}
+
+/*----------------HEADER----------------*/
+.c1 {
+    grid-area: header;
+    background-color: map-get($colores, color1);
+    a {
+        color: map-get($colores, color3);
+        img {
+            margin-top: 1em;
+             margin-bottom: 1em;
+            transition: all 1.5s ease-in-out;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+/*----------------MENU----------------*/
+
+header > div {
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+ }
+
+header ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    color: map-get($colores, color1);
+    text-transform: uppercase;
+    letter-spacing: .20rem;
+    &:hover {
+        text-decoration:line-through;
+        text-decoration-color: map-get($colores, color2);
+    }
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-collapse {
+    box-shadow: none;
+}
+
+/*----------------Sobre Mi----------------*/
+
+#about {
+    padding: 10em;
+}
+
+/*----------------FOOTER----------------*/
+.c6 {
+    grid-area: footer;
+    background-color: map-get($colores, color1);
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 3%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        a {
+            color: map-get($colores, color3);
+            padding-right: .5em;
+            font-size: small;
+            &:hover {
+                text-decoration:line-through;
+                text-decoration-color: map-get($colores, color2);
+            }
+        }
+    }
+}
+
+.c6 div a:last-child {
+    padding-right: 10em;
+}
