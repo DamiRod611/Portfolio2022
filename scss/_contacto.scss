@@ -1,8 +1,9 @@
 @import "variables";
 
-.grid-layout2 {
+.grid-layout5 {
     display: grid;
-    grid-template-areas: 'header header' 
+    grid-template-areas: 'header header'
+                         'contenido5 contenido5'
                          'form form'
                          'footer footer';
 }
@@ -59,6 +60,10 @@ header ul li a {
 
 /*----------------FORMULARIO----------------*/
 
+.c7 {
+    grid-area: form;
+}
+
 form {
     margin: 10em;
     label {
@@ -90,6 +95,13 @@ fieldset {
     box-shadow: 1px 1px 11px 1px rgba(7,24,33,0.43);
     -webkit-box-shadow: 1px 1px 11px 1px rgba(7,24,33,0.43);
     -moz-box-shadow: 1px 1px 11px 1px rgba(7,24,33,0.43);
+    width: 50%;
+}
+
+/*----------------Sobre Mi----------------*/
+
+.c11 {
+    grid-area: contenido5;
 }
 
 /*----------------FOOTER----------------*/

@@ -372,117 +372,9 @@ a {
   letter-spacing: 2px;
   color: #071821; }
 
-.grid-layout2 {
+.grid-layout5 {
   display: grid;
-  grid-template-areas: 'header header'  'contenido5 contenido5' 'footer footer'; }
-
-/*----------------HEADER----------------*/
-.c1 {
-  grid-area: header;
-  background-color: #071821; }
-  .c1 a {
-    color: #fff; }
-    .c1 a img {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      transition: all 1.5s ease-in-out; }
-      .c1 a img:hover {
-        transform: rotate(360deg); }
-
-/*----------------MENU----------------*/
-header > div {
-  align-items: center; }
-
-header ul {
-  list-style-type: none;
-  display: flex;
-  margin-bottom: 0; }
-
-header ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 15px 20px;
-  color: #071821;
-  text-transform: uppercase;
-  letter-spacing: .20rem; }
-  header ul li a:hover {
-    text-decoration: line-through;
-    text-decoration-color: #ff6347; }
-
-.navbar {
-  margin-bottom: 0px; }
-
-.navbar-collapse {
-  box-shadow: none; }
-
-/*----------------Sobre Mi----------------*/
-#about {
-  padding: 10em; }
-
-/*----------------FOOTER----------------*/
-.c6 {
-  grid-area: footer;
-  background-color: #071821; }
-  .c6 div {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 3%;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em; }
-    .c6 div a {
-      color: #fff;
-      padding-right: .5em;
-      font-size: small; }
-      .c6 div a:hover {
-        text-decoration: line-through;
-        text-decoration-color: #ff6347; }
-
-.c6 div a:last-child {
-  padding-right: 10em; }
-
-* {
-  margin: 0;
-  padding: 0;
-  cursor: url(../img/Cursor.png), auto; }
-
-/*----------------AUXILIARES----------------*/
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #071821; }
-
-.centrar {
-  width: 85%;
-  margin: 0 auto; }
-
-.columnas {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-
-section p {
-  margin: 1em 0;
-  font-size: 1.2em; }
-
-a {
-  text-decoration: none;
-  color: #071821; }
-
-.carousel-control {
-  width: 0;
-  opacity: 0; }
-
-/*----------------TEXTO Y COLOR----------------*/
-.titulos, .c3 > div > h2, .c5 h2 {
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 2px;
-  color: #071821; }
-
-.grid-layout2 {
-  display: grid;
-  grid-template-areas: 'header header'  'form form' 'footer footer'; }
+  grid-template-areas: 'header header' 'contenido5 contenido5' 'form form' 'footer footer'; }
 
 /*----------------HEADER----------------*/
 .c1 {
@@ -524,6 +416,9 @@ header ul li a {
   box-shadow: none; }
 
 /*----------------FORMULARIO----------------*/
+.c7 {
+  grid-area: form; }
+
 form {
   margin: 10em; }
   form label {
@@ -548,7 +443,12 @@ fieldset {
   padding: 20px;
   box-shadow: 1px 1px 11px 1px rgba(7, 24, 33, 0.43);
   -webkit-box-shadow: 1px 1px 11px 1px rgba(7, 24, 33, 0.43);
-  -moz-box-shadow: 1px 1px 11px 1px rgba(7, 24, 33, 0.43); }
+  -moz-box-shadow: 1px 1px 11px 1px rgba(7, 24, 33, 0.43);
+  width: 50%; }
+
+/*----------------Sobre Mi----------------*/
+.c11 {
+  grid-area: contenido5; }
 
 /*----------------FOOTER----------------*/
 .c6 {
